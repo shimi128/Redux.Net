@@ -14,6 +14,9 @@ namespace Redux.net
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             App.Bootstrap();
+            
         }
+
+       
     }
 }

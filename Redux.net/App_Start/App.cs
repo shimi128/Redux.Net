@@ -1,6 +1,7 @@
 ﻿using System.Net.Mime;
 using System.Web;
 using Redux;
+using Redux.DevTools;
 using Redux.net.Reducers;
 
 namespace Redux.net
@@ -18,6 +19,6 @@ namespace Redux.net
         {
             CounterStore = new Store<int>(reducer: CounterReducer.Execute, initialState: 0);
         }
-        
+
     }
 }

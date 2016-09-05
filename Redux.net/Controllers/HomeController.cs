@@ -33,5 +33,11 @@ namespace Redux.net.Controllers
             App.CounterStore.Dispatch(new IncrementAction());
             return RedirectToAction("Index");
         }
+
+        public ActionResult ClickDown()
+        {
+            App.CounterStore.Dispatch(new DecrementAction());
+            return RedirectToAction("Index");
+        }
     }
 }
